@@ -1,11 +1,8 @@
 'use strict'
 
 const formatString = function(string) {
-  const smallString = string.slice(0, 41)
-  if (smallString < string){
-    return `${smallString}${'...'}`;    
-  }
-  return string;
+  const smallString = string.slice(0, 40);
+  return smallString.length < string.length ? `${smallString}${'...'}` : string;  
 };
 
 /*

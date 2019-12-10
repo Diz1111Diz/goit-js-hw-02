@@ -1,9 +1,7 @@
 'use strict'
 
-const checkForSpam = function(message) {
+const checkForSpam = function (message) {
   const word = message.toLowerCase();
-   
-  console.log(word);
 
   return word.includes('spam') || word.includes('sale');
 };
